@@ -1,38 +1,356 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* <NAVBAR> */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ctn:hover {
+    background: #176be8;
+    transition: 0.5s;
+    transform: scale(01.3);
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo:hover {
+    /* box-shadow: 0px 5px 10px #e6ffff; */
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    color: rgb(243, 208, 180);
+}
+
+.nav-links li:hover {
+    color: rgb(0, 230, 211);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./himalaya.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content span {
+    color: rgb(121, 121, 121);
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.header-content span:hover {
+    /* box-shadow: 0px 5px 10px #e6ffff; */
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #cabe17;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-top: 10px;
+
+}
+
+/* section tag=== */
+section {
+    width: 80%;
+    padding: 80px 0px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(0, 0, 0);
+}
+
+.title h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #3d3d3d;
+    margin: 0;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.title h1 span {
+    color: #176be8;
+    display: inline-block;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* background: skyblue; */
+}
+
+.row .col {
+    padding: 15px;
+}
+
+.row .col .box {
+    border: 2px solid #f3f5f3;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.row .col img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #ec9f053d;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.row .col h4 {
+    font-size: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.row .col h4:hover {
+    color: #6a128d69;
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+.row .col p {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    margin-top: 35px;
+}
+
+.learn {
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.box {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 10px #e6ffff;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.col h1 {
+    font-size: 40px;
+    color: #3d3d3d;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content .line {
+    margin-bottom: 30px;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+.learn3 {
+    margin-top: 50px;
+}
+
+.explore-content p {
+    color: rgb(221, 221, 221);
+    font-family: Georgia, serif;
+    line-height: 25px;
+
+}
+
+.tours .row .col {
+    width: 50%;
+}
+
+.tours .image-gallary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+}
+
+.tours .col .rh {
+    width: 215px;
+}
+
+.image-gallary img {
+    margin: 10px;
+    height: 12pc;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.image-col {
+    width: 60%;
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+    color: #a09610;
+
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+
+}
+
+.content-col .ctn {
+    margin-left: -2px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: #484872;
+    text-align: center;
+
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+.footer span {
+    color: rosybrown;
+
+}
+
+.footer span:hover {
+    color: #99ebfffd;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.image-gallary img:hover {
+    box-shadow: 0px 0px 10px #e6ffff;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
